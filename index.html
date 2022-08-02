@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>520快乐</title>
+    <title>快乐</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
 <!--    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
@@ -106,7 +106,7 @@
 </div>
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #8ef5ff;">
-    你我说是<br>
+    云栖远山，风听稻海，世间风景，皆是告白<br>
     <!-- <br/> -->
     <span id="span_dt_dt"></span>
 </p>
@@ -138,7 +138,7 @@
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
             // 动态变化的话,用|分割
-            S.UI.simulate("How|I|Meet|My|Dear|Pig|I|Love|You|#countdown 3|#time");
+            S.UI.simulate("|#countdown 3|祝|我|最爱的|可可宝贝|二十岁|生日快乐！|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -285,14 +285,14 @@
 
                         if (sequence.length > 0) {
                             //定格
-                             S.Shape.switchShape(S.ShapeBuilder.letter("Nothing but You"))
+                             S.Shape.switchShape(S.ShapeBuilder.letter("我爱你！"))
                         } else {
                             timedAction(function () {
                                 t = formatTime(new Date());
                                 if (t !== time) {
                                     time = t;
                                     //定格
-                                     S.Shape.switchShape(S.ShapeBuilder.letter("Nothing but You"))
+                                     S.Shape.switchShape(S.ShapeBuilder.letter("我爱你！"))
                                 }
                             }, 1000);
                         }
